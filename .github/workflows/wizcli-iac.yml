@@ -18,6 +18,8 @@ jobs:
     env:
       SCAN_PATH: "." # Set the relative path in the repo to scan
       POLICY: "rowansmith IAC policy - block" # Set the desired Wiz CLI policy to use
+      WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
+      WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
